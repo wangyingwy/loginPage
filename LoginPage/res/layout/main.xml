@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- <ImageView android:background="@drawable/android"
+        	   /> -->
+    
+    <TableLayout android:id="@+id/TableLayout01"
+    		     android:layout_width="fill_parent"
+    			 android:layout_height="wrap_content"
+    			 android:stretchColumns="1"
+	>
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+	              android:layout_height="fill_parent"
+	              android:text="用户名" 
+	              android:gravity="center"           
+                  />
+        <EditText android:id="@+id/name"
+	              android:layout_width="fill_parent"
+	              android:layout_height="fill_parent"
+	              android:hint="请输入用户名"
+	              android:gravity="center"  
+	              android:selectAllOnFocus="true"
+                  />
+    </TableRow>
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+	              android:layout_height="fill_parent"     
+	              android:hint="密码"              
+	              android:gravity="center"       
+                  />
+        <EditText android:id="@+id/password"
+	              android:layout_width="fill_parent"
+	              android:layout_height="fill_parent"
+	              android:hint="请输入密码"
+	              android:password="true"
+	              android:gravity="center" 
+	              android:selectAllOnFocus="true" 
+	              />
+    </TableRow>
+    <CheckBox android:id="@+id/checkBox"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:checked="true"
+        	  android:text="同意用户协议"
+        	  />
+    <Button android:id="@+id/login"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Login"
+        	/>
+</TableLayout>
+
+</LinearLayout>
