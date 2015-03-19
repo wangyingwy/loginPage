@@ -2,56 +2,104 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/bear"
     android:orientation="vertical" >
-    
-    <!-- <ImageView android:background="@drawable/android"
-        	   /> -->
-    
-    <TableLayout android:id="@+id/TableLayout01"
-    		     android:layout_width="fill_parent"
-    			 android:layout_height="wrap_content"
-    			 android:stretchColumns="1"
-	>
-    <TableRow>
-        <TextView android:layout_width="wrap_content"
-	              android:layout_height="fill_parent"
-	              android:text="用户名" 
-	              android:gravity="center"           
-                  />
-        <EditText android:id="@+id/name"
-	              android:layout_width="fill_parent"
-	              android:layout_height="fill_parent"
-	              android:hint="请输入用户名"
-	              android:gravity="center"  
-	              android:selectAllOnFocus="true"
-                  />
-    </TableRow>
-    <TableRow>
-        <TextView android:layout_width="wrap_content"
-	              android:layout_height="fill_parent"     
-	              android:hint="密码"              
-	              android:gravity="center"       
-                  />
-        <EditText android:id="@+id/password"
-	              android:layout_width="fill_parent"
-	              android:layout_height="fill_parent"
-	              android:hint="请输入密码"
-	              android:password="true"
-	              android:gravity="center" 
-	              android:selectAllOnFocus="true" 
-	              />
-    </TableRow>
-    <CheckBox android:id="@+id/checkBox"
-        	  android:layout_width="wrap_content"
-        	  android:layout_height="wrap_content"
-        	  android:checked="true"
-        	  android:text="同意用户协议"
-        	  />
-    <Button android:id="@+id/login"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="Login"
-        	/>
-</TableLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/body"
+        android:padding="15dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"    
+        >
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="用户名" 
+                    android:textColor="#fcfcfc"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:hint="请输入用户名"
+                    android:selectAllOnFocus="true" 
+                    android:textColor="#fcfcfc"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="密码" 
+                    android:textColor="#fcfcfc"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:hint="请输入密码"
+                    android:password="true"
+                    android:selectAllOnFocus="true" 
+                    android:textColor="#fcfcfc"
+                    android:textSize="15sp"/>
+            </TableRow>
+
+            <TableRow >
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="同意" />
+
+                <TextView
+                    android:id="@+id/file"
+                    android:text="@string/agrrentment"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <Button android:background="@drawable/button"
+	                android:id="@+id/login"
+	                android:layout_width="wrap_content"
+	                android:layout_height="30dp"
+	                android:gravity="center"
+	                android:layout_gravity="center"
+	                android:paddingBottom="2dp"
+			        android:paddingLeft="50dp"
+			        android:paddingRight="50dp"
+			        android:paddingTop="2dp"
+	                android:text="Login" 
+	                android:textColor="#fcfcfc"
+	                android:textStyle="bold"/>
+        </TableLayout>
+    </LinearLayout>
 
 </LinearLayout>
