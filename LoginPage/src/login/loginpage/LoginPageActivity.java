@@ -41,28 +41,30 @@ public class LoginPageActivity extends Activity {
     	AlertDialog.Builder builder = new AlertDialog.Builder(this)
 //    	设置对话框标题
 	    	.setTitle("用户协议")
-	    	.setMessage("这是用户协议");
+	    	.setMessage("这是用户协议呀这是服务协议……我是来占位置的啊我是来占位置的哈哈哈哈哈哈……");
 //    	为对话框添加确定按钮
-    	setPositiveButton(builder);
-//    	为对话框添加取消按钮
-    	setNegativeButton(builder)
+    	setPositiveButton(builder)
     		.create()
     		.show();
+//    	为对话框添加取消按钮
+    	/*setNegativeButton(builder)
+    		.create()
+    		.show();*/
     } 
     
     private AlertDialog.Builder setPositiveButton(AlertDialog.Builder builder){
-    	return builder.setPositiveButton("确定", new OnClickListener()
+    	return builder.setPositiveButton("确定", new DialogInterface.OnClickListener()
     	{
     		public void onClick(DialogInterface dialog, int which){
     			dialog.dismiss();
     		}
     	});
     }	
-	private AlertDialog.Builder setNegativeButton(AlertDialog.Builder builder){
-		return builder.setNegativeButton("取消", new OnClickListener(){
+	/*private AlertDialog.Builder setNegativeButton(AlertDialog.Builder builder){
+		return builder.setNegativeButton("取消", new DialogInterface.OnClickListener(){
     		public void onClick(DialogInterface dialog, int which){
     			dialog.dismiss();
     		}
     	});	
-	}
+	}*/
 }
