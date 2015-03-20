@@ -9,98 +9,117 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_logo"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo"
-        android:layout_marginTop="50dp"/>
+        android:src="@drawable/logo" />
 
-    <LinearLayout 
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/body"
-        android:padding="15dip"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"    
-        >
+        android:layout_marginRight="20dp"
+        android:background="@drawable/body"
+        android:orientation="vertical"
+        android:padding="15dip" >
 
-        <TableLayout
-            android:id="@+id/TableLayout01"
-            android:layout_width="fill_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="1" >
+            android:background="@drawable/bg_table"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
 
-            <TableRow >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="3dp" >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:text="用户名" 
-                    android:textColor="#fcfcfc"
-                    android:textSize="15sp"/>
-
-                <EditText
-                    android:id="@+id/name"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:hint="请输入用户名"
-                    android:selectAllOnFocus="true" 
-                    android:textColor="#fcfcfc"
-                    android:textSize="15sp"/>
-            </TableRow>
-
-            <TableRow >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:text="密码" 
-                    android:textColor="#fcfcfc"
-                    android:textSize="15sp"/>
-
-                <EditText
-                    android:id="@+id/password"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:gravity="center"
-                    android:hint="请输入密码"
-                    android:password="true"
-                    android:selectAllOnFocus="true" 
-                    android:textColor="#fcfcfc"
-                    android:textSize="15sp"/>
-            </TableRow>
-
-            <TableRow >
-
-                <CheckBox
-                    android:id="@+id/checkBox"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="同意" />
+                    android:padding="4dp"
+                    android:src="@drawable/user" />
 
-                <TextView
-                    android:id="@+id/file"
-                    android:text="@string/agrrentment"
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="请输入用户名"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
                     android:textSize="15sp" />
             </TableRow>
 
-            <Button android:background="@drawable/button"
-	                android:id="@+id/login"
-	                android:layout_width="wrap_content"
-	                android:layout_height="30dp"
-	                android:gravity="center"
-	                android:layout_gravity="center"
-	                android:paddingBottom="2dp"
-			        android:paddingLeft="50dp"
-			        android:paddingRight="50dp"
-			        android:paddingTop="2dp"
-	                android:text="Login" 
-	                android:textColor="#fcfcfc"
-	                android:textStyle="bold"/>
-        </TableLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#aca8aa" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="3dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:src="@drawable/password" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:password="true"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </TableRow>
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="同意"
+                android:textColor="#333232" />
+
+            <TextView
+                android:id="@+id/file"
+                android:text="@string/agrrentment"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="3dp"
+            android:text="Login"
+            android:textColor="#fcfcfc"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>

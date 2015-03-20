@@ -46,10 +46,6 @@ public class LoginPageActivity extends Activity {
     	setPositiveButton(builder)
     		.create()
     		.show();
-//    	为对话框添加取消按钮
-    	/*setNegativeButton(builder)
-    		.create()
-    		.show();*/
     } 
     
     private AlertDialog.Builder setPositiveButton(AlertDialog.Builder builder){
@@ -60,11 +56,4 @@ public class LoginPageActivity extends Activity {
     		}
     	});
     }	
-	/*private AlertDialog.Builder setNegativeButton(AlertDialog.Builder builder){
-		return builder.setNegativeButton("取消", new DialogInterface.OnClickListener(){
-    		public void onClick(DialogInterface dialog, int which){
-    			dialog.dismiss();
-    		}
-    	});	
-	}*/
 }

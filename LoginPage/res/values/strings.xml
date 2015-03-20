@@ -3,7 +3,7 @@
 
     <string name="hello">Hello World, LoginPageActivity!</string>
     <string name="app_name">LoginPage</string>
-    <string name="agrrentment"><u style="color:#fcfcfc; font-size:15px;">服务协议</u></string>
+    <string name="agrrentment"><u>服务协议</u></string>
         
 
 </resources>
